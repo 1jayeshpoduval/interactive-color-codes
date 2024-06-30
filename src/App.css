@@ -1,38 +1,128 @@
-.App {
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Spline Sans';
+  font-weight: 500;
+  color: #fff;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+  padding: 5rem 0;
+  background-color: #E9D8A6;
+}
+
+.container {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+  gap: 3rem;
+  z-index: 2;
+}
+
+h1 {
+  font-family: "Libre Caslon Condensed";
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: -0.02em;;
+}
+
+.text-align-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row {
   display: flex;
+  gap: 1em;
+}
+
+.col {
+  position: relative;
+  cursor: pointer;
+}
+
+.col-lg-2 {
+  height: 180px;
+  max-width: 20%;
+  flex-shrink: 1;
+  flex-grow: 0;
+  flex-basis: 20%;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.text-1 {
+  font-size: 1rem;
+  letter-spacing: 0em;
+  line-height: 150%;
+}
+
+.u-position-absolute {
+  position: absolute;
+}
+
+.u-bottom-10 {
+  bottom: 10%;
+}
+
+.u-font-weight-400 {
+  font-weight: 400;
+}
+
+.color-modal {
+  position: fixed;
+  top: 25%;
+  left: 30%;
+  width: 450px;
+  height: 450px;
+  font-size: 1.5rem;
+  border-radius: 1em;
+  z-index: 4;
+  cursor: pointer;
+}
+
+.color-description {
+  display: flex;
+  height: 100%;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: end;
+  gap: 1em;
+  padding: 1em;
+
 }
 
-.App-link {
-  color: #61dafb;
+.u-opacity-70 {
+  opacity: 70%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255,255,255,0.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
 }
