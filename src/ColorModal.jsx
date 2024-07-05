@@ -20,7 +20,7 @@ const ColorModal = (props) => {
             layoutId = {props.selectedId}
             onClick={props.close}>
                 <div className='color-description'>
-                    <div layoutId='1'>{props.selectedName}</div>
+                    <motion.div layout='position' layoutId={props.selectedName}>{props.selectedName}</motion.div>
                     <div className='divider'></div>
                     <div>
                     <div className='text-1 u-font-weight-400 u-opacity-70'>RGB: {props.selectedRGB}</div>

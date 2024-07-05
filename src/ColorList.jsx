@@ -38,8 +38,8 @@ const ColorList = (props) => {
                     damping: 18
                 }}
                 layoutId={color.id}>
-                    <div className='text-1 u-position-absolute u-bottom-10'
-                        layoutId='1'>{color.name}</div>
+                    <motion.div className='text-1 u-position-absolute u-bottom-10'
+                        layout='position' layoutId={color.name}>{color.name}</motion.div>
                 </motion.div>
         ))}
     </div>
