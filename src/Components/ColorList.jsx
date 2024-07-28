@@ -19,10 +19,10 @@ const ColorList = (props) => {
   };
 
   return (
-    <div className="row">
+    <div className="font-regular flex select-none gap-4 text-white">
       {colors.map((color) => (
         <motion.div
-          className="col col-lg-2"
+          className="max-w-20% h-180px relative flex-grow basis-1/5 cursor-pointer rounded-xl p-3"
           key={color.id}
           style={{ backgroundColor: color.hex }}
           onClick={() => {
@@ -41,7 +41,7 @@ const ColorList = (props) => {
           layoutId={color.id}
         >
           <motion.div
-            className="text-1 u-position-absolute u-bottom-10"
+            className="text-md absolute bottom-4"
             layout="position"
             layoutId={color.name}
           >
