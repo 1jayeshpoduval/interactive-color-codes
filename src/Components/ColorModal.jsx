@@ -7,7 +7,7 @@ const ColorModal = (props) => {
       <AnimatePresence>
         {props.isModalOpen && (
           <motion.div
-            className="color-modal"
+            className="w-450px h-450px -ml-225px -mt-225px fixed left-1/2 top-1/2 z-30 cursor-pointer select-none rounded-xl text-lg text-white"
             style={{ backgroundColor: props.selectedColor.hex }}
             transition={{
               type: "spring",
@@ -17,19 +17,19 @@ const ColorModal = (props) => {
             layoutId={props.selectedColor.id}
             onClick={props.close}
           >
-            <div className="color-description">
+            <div className="flex h-full flex-col justify-end gap-4 p-4">
               <motion.div layout="position" layoutId={props.selectedColor.name}>
                 {props.selectedColor.name}
               </motion.div>
-              <div className="divider"></div>
+              <div className="h-2px w-full bg-white opacity-10"></div>
               <div>
-                <div className="text-1 u-font-weight-400 u-opacity-70">
+                <div className="text-md font-regular leading-relaxed opacity-65">
                   RGB: {props.selectedColor.rgb}
                 </div>
-                <div className="text-1 u-font-weight-400 u-opacity-70">
+                <div className="text-md font-regular leading-relaxed opacity-65">
                   HSL: {props.selectedColor.hsl}
                 </div>
-                <div className="text-1 u-font-weight-400 u-opacity-70">
+                <div className="text-md font-regular leading-relaxed opacity-65">
                   HEX: {props.selectedColor.hex}
                 </div>
               </div>
