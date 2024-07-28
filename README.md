@@ -1,8 +1,6 @@
-# React + Vite
+A list of colors where clicking on a color opens a modal with more details about the selected color. Built with React and Framer Motion, it provides a smooth and visually appealing user experience.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features
+Color List: Displays a list of 5 colors.
+Dynamic Modal: Clicking a color opens a modal with additional information about the selected color.
+Smooth Transitions: Utilizes Framer Motion to ensure smooth animations and transitions for the modal.
